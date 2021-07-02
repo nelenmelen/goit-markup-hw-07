@@ -447,15 +447,17 @@ background-color:var(--color-button-logo) ;
 } 
 
 
-.footer .logo{
-color: var(--white-color);      
+.footer .footer-nav__logo{
+color: var(--white-color); 
+font-size: 26px;
+font-family: Raleway;     
 }  
 
-.logo-web{
+.footer-nav__logo--web{
  color: var(--color-logo-links) ;
 }
 
-.footer .mail{
+.footer .footer-nav__mail{
  font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
@@ -463,35 +465,37 @@ color: var(--white-color);
   color:  var(--footer-phone-mail);
   
 }
-.footer .phone{
+.footer .footer-nav__phone{
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;
   letter-spacing: 0.03em;
   color:  var(--footer-phone-mail);       
 }  
-.address{
+.footer-nav__address{
   margin-top: 20px;
 }
-.contacts {  
+.footer-nav__contacts {  
   font-weight: normal;
   font-size: 14px;
   line-height: 1.714;     
   letter-spacing: 0.03em; 
   color: var(--white-color);       
 }
-/* .footer .conteiner{ 
-  display: flex;  
-  padding-top: 60px;
-  padding-bottom: 60px;        
-} */
-.footer-contacts li{
+
+.footer-nav__link li{
 margin-top: 9px;
 }
 .footer .link:hover,
 .footer .link:focus{
   color: var(--color-button-logo);
 }
+
+
+
+
+
+
 .footer-join {
   display: flex;
  justify-content: center;   
