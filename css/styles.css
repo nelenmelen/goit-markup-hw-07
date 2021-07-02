@@ -600,7 +600,7 @@ margin-top: 9px;
 
 
     /* Портфолио */
-    .web-link{
+    /* .web-link{
         font-family: Roboto;
         font-style: normal;
         font-weight: 500;
@@ -623,18 +623,18 @@ margin-top: 9px;
         font-weight: 500;
         color: var(--main-text-color);
         line-height: 1.142;
-    } 
+    }  */
    /* Кнопки портфолио */
 
-.button-portfolio:focus,
-.button-portfolio:hover {
+.button__portfolio:focus,
+.button__portfolio:hover {
     color: var(--white-color);
   background-color: var(--color-logo-links);
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 
-.buttons-portfolio{
+.buttons__portfolio{
     margin-bottom: 50px; 
     display: flex;
     justify-content: center;
@@ -642,7 +642,7 @@ margin-top: 9px;
     
 }
 
-.button-portfolio{
+.button__portfolio{
     font-family: Roboto;
     font-style: normal;
     font-weight: 500;
@@ -661,7 +661,7 @@ margin-top: 9px;
    }
 
    /* Фото портфолио */
-   .portfolio-page{
+   .portfolio__page{
     padding-top: 94px;
     padding-bottom: 94px;
    }
@@ -671,7 +671,7 @@ margin-top: 9px;
       margin-top: 30px;
 }
 
-.card-content{
+.card__content{
     padding: 20px 24px;
     background-color: var(--white-color);
    border: 1px solid var(--card-content-border); 
@@ -685,7 +685,7 @@ margin-top: 9px;
     background-color: var(--color-logo-links);
   }
 
-.photo-portfolio{
+.photo__portfolio{
     padding: 0;
     margin: 0;
    display: flex;
@@ -694,7 +694,7 @@ margin-top: 9px;
    margin-left: -30px; 
     }
 
-    .portfolio-text{
+    .portfolio__text{
     font-family: Roboto;
     font-style: normal;
     font-weight: bold;
@@ -704,7 +704,7 @@ margin-top: 9px;
     letter-spacing: 0.06em;
     }
 
-.photo-name{
+.photo__name{
     font-family: Roboto;
     font-weight: normal;
     font-size: 16px;
@@ -717,7 +717,7 @@ margin-top: 9px;
 
 /* Адрес */
 
-.portfolio-down{
+/* .portfolio-down{
     background: var(--background);
 }
 
@@ -756,6 +756,13 @@ margin-top: 9px;
     line-height: 1.714;
     color: var(--main-text-color);
     }
+
+ */
+
+
+
+
+
 
 
   /* Наши клиенты */
@@ -821,12 +828,12 @@ margin-top: 9px;
 
 /* ПОРТФОЛИО  */
 
-.card-thumb{
+.card__thumb{
   position: relative;
   overflow: hidden;      
 }
 
-.card-box{ 
+.card__box{ 
   position: absolute;
   width: 100%;
    height: 100%;
@@ -840,11 +847,11 @@ margin-top: 9px;
    transform: translateY(100%);  
    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);   
 }
-.card:hover .card-box{
+.card:hover .card__box{
   transform: translateY(0);
 }
 
-.card-text{      
+.card__text{      
   font-size: 18px;
   line-height: 1.555; 
   letter-spacing: 0.03em;
