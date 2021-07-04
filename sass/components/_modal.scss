@@ -1,0 +1,278 @@
+.btn-modal-close {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    
+  }
+   
+  .icon-btn-close {
+    position: absolute;
+    transform: translate3d(-50%, -50%, 0);
+    width: 11px;
+    height: 11px;
+    
+  }
+  
+  .modal {
+    position: fixed;
+    top: 0;
+    left: 0; 
+        
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+  }
+
+  .modal.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+  }
+
+  .modal__content {      
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background: $white-color; 
+    width: 528px;
+    height: 581px;
+  }
+
+
+  .modal__tape--close {
+    width: 15px;
+    height: 15px;
+    fill: currentColor;      
+  }  
+
+
+  .tape {
+   position: absolute;
+   right: 8px;
+   top: 8px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 30px;
+   height: 30px;
+   border-radius: 50%;
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   cursor: pointer;
+   background-color: $white-color;
+   &:hover,
+   &:focus {
+    border-color: $color-button-logo;
+    color: $color-button-logo;      
+  }
+  }
+
+  .is-hidden {
+   visibility: hidden;
+   opacity: 0;
+   pointer-events: none;
+   transition: opacity 3000ms cubic-bezier(0.4, 0, 0.2, 1), visibility 5000ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+
+  .form__group {
+   position: relative;
+   margin-bottom: 10px;
+  }
+  
+  .form__modal {
+   padding: 40px 40px 28px 40px;
+   margin: 0;
+  }
+
+  .form__label {
+   margin-bottom: 4px;  
+  }
+
+  .form__title {
+   font-weight: bold;
+   font-size: 20px;
+   line-height: 1.150;
+   letter-spacing: 0.03em;
+   text-align: center;
+   
+   margin-bottom: 12px;
+   color: $main-color-headers;
+  }
+
+  .form__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    font: inherit;
+      border-radius: 4px;
+      border: 2px solid rgba(33, 33, 33, 0.2);  
+      outline: none;
+      transition: border $company-social-color;
+    &:hover + .form-icon,
+    &:focus + .form-icon {
+        fill: $color-button-logo;                   
+    }
+  }
+  
+  
+  .form__input:focus {     
+   border: 2px solid $color-button-logo;      
+  } 
+
+
+  textarea:focus {
+   border: 2px solid $color-button-logo; 
+  }  
+    
+  .form__icon {
+    position: absolute;
+    top: 29px;
+    left: 12px;
+    fill: $text-color;
+    transition: fill $transf-hover;
+  }
+  
+  
+  
+ 
+  
+  
+  .form__textarea{
+    display: block;
+    width: 448px;
+    
+    box-sizing: border-box;
+    resize: none;
+    padding: 12px 16px 12px 16px rgba(33, 33, 33, 0.2);
+    font-size: 14px;
+      line-height: 1.143em;
+      letter-spacing: 0.01em;
+      resize: none;
+      height: 120px;
+      padding: 12px 16px;
+      border: 2px solid rgba(33, 33, 33, 0.2);
+      border-radius: 4px;
+      outline: none;
+      transition: border $transf-hover;
+  }
+  
+  
+  .form__polisy{
+   display: flex;
+   align-items: center;
+   flex-direction: row;
+   
+  }
+  
+  .form__textarea::placeholder {
+    color: $modal-form-comm;
+  }
+  .form__input:hover,
+  .form__input:focus,
+  .form__textarea:hover,
+  .form__textarea:focus{
+    border-color: $color-logo-links;
+  }
+  
+  
+  
+  .checkbox{     
+    appearance: none;       
+    display: inline-block;
+  align-self: center;
+  margin-bottom: 30px;      
+  }
+  
+  
+  .icon-check{
+    margin-left: 18px;
+    border-radius: 2px;
+    position: relative;
+   display: inline-block;
+   vertical-align: middle;
+   width: 16px;
+   height: 15px;
+   border: 2px solid $main-color-headers;
+   transition: border $transf-hover;
+  
+           
+  }
+  .checkbox:focus +.icon-check{
+    border-color: $color-logo-links;
+  }
+  
+  .checkbox:checked +.icon-check{
+    background-color: $color-logo-links;
+    border-color: $color-logo-links;
+    background-repeat: no-repeat; 
+   background-position: center;
+   background-origin: border-box; 
+  } 
+  
+  
+  .contract{
+    color: $color-logo-links; 
+  } 
+  .form__btn{
+    margin-top: 25px;
+    margin-bottom: 40px; 
+    line-height: 1.875;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 4px;
+    color: $white-color;
+    background-color: $color-button-logo;
+    display: block;
+    align-self: center;
+    padding: 10px 55px ;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  } 
+  .button__wrapper{
+  display: flex;	
+  justify-content: center;	
+  
+  }    
+  
+  .modal__text{
+    font-weight: 400;
+      font-size: 12px;
+      line-height: 1.167em;
+      letter-spacing: 0.01em;
+      margin-bottom: 4px;
+      color: $contacts-color;
+   }
+  
+   .label__icon{
+    position: relative;
+    margin-bottom: 10px;
+   }
+  
+   .form__checkbox{
+    position: absolute;
+    display: block;
+    width: 12px;
+    height: 11px;
+    fill: $fons-html;
+  }
+  .check__text {
+    display: inline-block;
+    padding-left: 4px;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $main-text-color;
+  }
+  
+  
+  .textdec{
+    text-decoration: underline;
+  }

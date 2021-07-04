@@ -16,6 +16,11 @@
     --fons-html: #ffffff;
     --transf-hover: 250ms cubic-bezier(0.4, 0, 0.2, 1);
     --text-color: #212121;
+    --button-style-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    --hero-background-color:#2F303A;
+    --case-background: rgba(47, 48, 58, 0.8);
+    --svg-social-background: rgba(255, 255, 255, 0.1);
+    --subscribe-background-color: #2F303A;
 } 
  
 /* универсальный селектор */
@@ -73,8 +78,6 @@ height: auto;
 
 
 
-
-/* общие свойства ссылок */
 
 /* ссылки */
 .link {
@@ -180,7 +183,7 @@ height: auto;
 
 /* Герой */
  .hero {
-      background-color:#2F303A ;
+      background-color: var(--hero-background-color);
       padding-bottom: 200px;
       padding-top: 200px;  
      background-image:linear-gradient(to right,rgba(48, 58, 47, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img.jpg);
@@ -291,6 +294,15 @@ justify-content: space-between;
 }
 
 /* Чем мы занимаемся */
+.title{
+font-weight: bold;
+font-size: 36px;
+line-height: 1.167;
+text-align: center;
+letter-spacing: 0.03em;
+color: var(--main-color-headers);
+margin-bottom: 50px;
+} 
 
 .box__img{
     display: flex;
@@ -313,7 +325,7 @@ justify-content: space-between;
    bottom: 0;        
    width: 370px;
    height: 70px;
-   background: rgba(47, 48, 58, 0.8);
+   background: var(--case-background);
  
 }
 .title__case{
@@ -422,7 +434,7 @@ background-color:var(--color-button-logo) ;
 
 .team__svg{
   width: 20px;
-    height: 20px;
+  height: 20px;
 }
 
 
@@ -527,7 +539,7 @@ margin-top: 9px;
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
+  background: var(--svg-social-background);
   fill:#FFFFFF;
   width: 44px;
   height: 44px;
@@ -565,7 +577,7 @@ margin-top: 9px;
   height: 50px;
   margin-bottom: 94px;
   padding-left: 16px;
-  background-color: #2F303A;
+  background-color: var(--subscribe-background-color);
   outline: none;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-shadow: rgba(0, 0, 0, 0.15) ;
@@ -599,32 +611,7 @@ margin-top: 9px;
   
 
 
-    /* Портфолио */
-    /* .web-link{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.142;
-        color: var(--main-color-headers) ;
-}
-     .mail{
-        text-decoration: none;
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--main-text-color);
-        line-height: 1.142;
-     }
-    .phone{
-        text-decoration: none;
-        font-family: Roboto;
-        font-size: 14px;
-        font-weight: 500;
-        color: var(--main-text-color);
-        line-height: 1.142;
-    }  */
-   /* Кнопки портфолио */
+   
 
 .button__portfolio:focus,
 .button__portfolio:hover {
@@ -715,49 +702,6 @@ margin-top: 9px;
 
 
 
-/* Адрес */
-
-/* .portfolio-down{
-    background: var(--background);
-}
-
-.footer-web{
-    font-family: Raleway;
-    font-weight: bold;
-    line-height: 1.192;
-    color: var(--color-button-logo);
-}
-.footer-studio{
-    font-family: Raleway;
-    font-weight: bold;
-    line-height: 1.192;
-    color:  var(--white-color);
-}
-.address-style{
-    font-style: normal;
-    font-family: Roboto;
-    font-weight: normal;
-    line-height: 1.714;
-    color: var(--white-color);
-    }
-.portfolio-footer-mail{
-    Text-decoration: none;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.714;
-    color: var(--main-text-color);
-    }
-.portfolio-footer-phone{
-    Text-decoration: none;
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: normal;
-    line-height: 1.714;
-    color: var(--main-text-color);
-    }
-
- */
 
 
 

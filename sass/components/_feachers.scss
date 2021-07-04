@@ -1,0 +1,54 @@
+.section__one{
+    padding-top: 94px; 
+}
+
+.section__two{
+display: flex;
+justify-content: space-between;
+}
+
+.section__three{
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 270px;
+  height: 120px;
+  background: var(--color-our-team);
+  border-radius: 4px;
+}
+
+
+.special content{
+    display: flex; 
+    justify-content: space-between;
+}
+
+.special__columns li:not(:last-child){
+    margin-right: 30px;
+}
+.special ul{
+    display: flex;
+}
+
+
+.special__title{
+    font-weight: bold;
+    line-height: 1.172;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $main-color-headers;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    
+}
+.special__text{
+    width: 270px;
+    font-size: 14px;
+    line-height: 1.714;
+    color: $main-text-color;
+    font-weight: normal;
+    letter-spacing: 0.03em;
+    
+    
+}
